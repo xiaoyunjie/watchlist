@@ -43,6 +43,14 @@ pipenv install flask  flask-login  flask-sqlalchemy python-dotenv
 
 ### 程序启动
 ```bash
+#进入虚拟环境
 pipenv shell
-flask run
+#初始化数据库
+flask initdb
+#初始化数据
+flask forge
+#创建管理员账户
+flask admin
+#启动程序
+flask run -h 0.0.0.0 -p 8080
 ```
