@@ -37,15 +37,13 @@ pip install pipenv
 cd /opt
 git clone https://github.com/xiaoyunjie/watchlist.git
 cd watchlist
-pipenv --python 3.7 install 
+pipenv --python 3.7  
 pipenv shell 
 pipenv install flask  flask-login  flask-sqlalchemy python-dotenv
 ```
 
 ### 程序启动
 ```bash
-#进入虚拟环境
-pipenv shell
 #初始化数据库
 flask initdb
 #初始化数据
