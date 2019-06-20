@@ -36,7 +36,7 @@ pip install pipenv
 cd /opt
 git clone https://github.com/xiaoyunjie/watchlist.git
 cd watchlist
-pipenv install 
+pipenv --python 3.7 install 
 pipenv shell 
 pipenv install flask  flask-login  flask-sqlalchemy python-dotenv
 ```
