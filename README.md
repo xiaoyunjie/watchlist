@@ -4,8 +4,9 @@
 
 根据flask入门手册，学习并实践了flask 入门学习小程序，从这个小程序初步熟悉并了解flask框架，以及一个web程序的整体架构以及如何一步步编写一套web。
 
+## 快速部署
 
-### 快速部署
+### 环境部署
 
 #### CentOS
 
@@ -30,7 +31,7 @@ ln -s /usr/local/python3/bin/pip3.7 /usr/bin/pip3.7
 python3.7 -V
 ```
 
-### web程序部署
+### web部署
 ```bash
 pip install pipenv
 cd /opt
