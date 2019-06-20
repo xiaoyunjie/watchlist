@@ -50,7 +50,7 @@ flask initdb
 #初始化数据
 flask forge
 #创建管理员账户
-flask admin
+flask admin --username  admin  --password 123
 #启动程序
 flask run -h 0.0.0.0 -p 8080
 ```
