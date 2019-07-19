@@ -10,13 +10,13 @@
 
 
 from flask import url_for,request,render_template,redirect,flash
-from flask_login import UserMixin,login_user,login_required,logout_user,current_user
+from flask_login import login_user,login_required,logout_user,current_user
 from watchlist import app,db
 from watchlist.models import User,Movie
 
 # 主页
 @app.route('/', methods=['GET','POST'])
-# @login_required
+@login_required
 def index():
     if request.method == 'POST':  # 判断是否是 POST 请求
         if not current_user.is_authenticated:  # 如果当前未认证
