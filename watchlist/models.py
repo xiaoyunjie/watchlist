@@ -10,7 +10,7 @@
 
 from flask_login import UserMixin
 from werkzeug.security import  generate_password_hash,check_password_hash
-from watchlist import  db
+from watchlist import db
 
 # 数据库模型
 class User(db.Model,UserMixin):  # 表名将会是 user（自动生成，小写处理）
